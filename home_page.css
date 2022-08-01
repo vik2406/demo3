@@ -1,0 +1,1561 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+}
+
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body,
+html,
+button,
+input {
+  font-family: "Rubik", "Lato", sans-serif;
+  line-height: normal;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+  outline: 0;
+  border: 0;
+}
+
+.bfl-container {
+  width: 100%;
+  padding-left: 4px;
+  padding-right: 4px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.bfl-container::before,
+.bfl-container::after {
+  content: "";
+  display: table;
+}
+
+.bfl-container::after {
+  clear: both;
+}
+
+.bfl-mf-hp-container {
+  padding: 20px;
+  box-shadow: 0 0 8px 0 rgba 0, 0, 0, 0.2;
+  border-radius: 8px;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.dsp-none {
+  display: none;
+}
+
+.img-wh {
+  width: 100%;
+  height: 100%;
+}
+
+.img-cv--contain {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.img-cv--cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.dsp-flex {
+  display: flex;
+  flex-direction: unset;
+}
+
+.dsp-flex-colm {
+  display: flex;
+  flex-direction: column;
+}
+
+.dsp-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dsp-block {
+  display: block;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.pb-5 {
+  padding-bottom: 5px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.text-gray {
+  color: #666666;
+}
+
+.bfl-mf-para-rte h2 {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.bfl-mf-home-para-rte h2 {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.bfl-mf-home-para-rte p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.bfl-mf-para-rte p {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.bfl-mf-para-rte .description {
+  color: #666666;
+}
+
+.bfl-mf-home-para-rte .description {
+  color: #666666;
+}
+
+.bfl-mf-mb {
+  margin-bottom: 12px;
+}
+
+.bfl-home-heading-clr {
+  color: #1A1A1A;
+}
+
+.partnersAmcTop {
+  justify-content: space-between;
+}
+
+.partnersAmcIconsContainer {
+  margin-top: 15px;
+}
+
+.partnersAmcIconsContainer .iconsImgContainer {
+  width: 60px;
+  height: 60px;
+}
+
+.img-circle {
+  border-radius: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.bfl-mf-breadcrumb {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 12px 0 12px 0;
+}
+
+ul.bfl-mf-breadcrumb li + li::before {
+  content: "";
+  border: solid #000000;
+  padding: 2px;
+  display: inline-block;
+  border-width: 0 1px 1px 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin: 0 5px;
+  text-align: center;
+}
+
+.home-page-breadcrumb {
+  font-size: 12px;
+  line-height: 14px;
+  color: #1a1a1a;
+}
+
+.home-page-breadcrumb li a {
+  text-decoration: underline;
+}
+
+.home-page-breadcrumb li:last-child a {
+  text-decoration: none;
+  color: #1A1A1A;
+}
+
+.home-mutual-fund {
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(97.13deg, #696358 5.56%, #B0A795 94.44%);
+}
+
+.mutual-funds-text {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  line-height: 24px;
+}
+
+.start-investing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 23px 11px;
+  background-color: #FF6700;
+  border-radius: 23px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.performing-tab-wrap {
+  display: flex;
+  border-bottom: 1px solid #D3DAE1;
+  margin-top: 12px;
+}
+
+.performing-fund-wrapper {
+  display: none;
+}
+
+.bfl-performing-tab-sub {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  padding: 0 14px 14px;
+  color: #002953;
+}
+
+.view-all-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FF6700;
+  margin-left: auto;
+}
+
+.bfl-performing-tab-active {
+  color: #FF6700;
+  border-bottom: 2px solid #FF6700;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.performing-card-main-wrapper {
+  margin-top: 16px;
+}
+
+.performing-card-sub-wrapper {
+  margin: 0 15px;
+  padding: 12px 0;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+}
+
+.performing-fund-wrapper .slick-list {
+  margin: 0 -15px;
+}
+
+.perform-title-sec-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+
+.fund-invest-img {
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+}
+
+.invest-img {
+  width: 100%;
+  height: 100%;
+}
+
+.perform-arrow-icon {
+  width: 7px;
+  height: 12px;
+}
+
+.bfl-performing-title {
+  font-size: 14px;
+  line-height: 17px;
+  color: #1A1A1A;
+}
+
+.value-research {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #666666;
+}
+
+.value-equity {
+  display: none;
+}
+
+.per-view-sub-wrap {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #F2F2F2;
+  margin: 12px;
+  border-radius: 8px;
+}
+
+.per-min-inves-sub {
+  flex: 1;
+  border-right: 1px solid #D3DAE1;
+}
+
+.per-min-inves-sub:last-child {
+  border-right: none;
+}
+
+.per-min-text {
+  font-size: 12px;
+  line-height: 14px;
+  color: #666666;
+}
+
+.per-rupee-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #1A1A1A;
+  margin-top: 8px;
+}
+
+.compare-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #CCCCCC;
+  padding: 12px 12px 0;
+}
+
+.copmare-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.add-to-compare {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #666666;
+}
+
+.per-invest-btn {
+  padding: 12px 23px 11px;
+  background: #FFF2EA;
+  border-radius: 23px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FF6700;
+}
+
+.desk-hide-view {
+  display: none;
+}
+
+.bfl-current-tab {
+  display: block;
+}
+
+.bfl-checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.home-star-img {
+  width: 12px;
+  height: 12px;
+  margin-left: 3px;
+}
+
+/* Hide the browser's default checkbox */
+
+.bfl-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+
+.compare-checkmark {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 2px;
+  border: 1.5px solid #FF6700;
+  background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.bfl-checkbox-container input:checked ~ .compare-checkmark {
+  background-color: #FF6700;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.compare-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+
+.bfl-checkbox-container input:checked ~ .compare-checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.bfl-checkbox-container .compare-checkmark:after {
+  left: 3px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* .heading {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    font-family: "Rubik";
+}
+*/
+
+.article-start {
+  justify-content: space-between;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+
+/* .article{
+    // width: 50%;
+    width: max-content;
+} */
+
+.article-content {
+  margin: 5px 0;
+}
+
+.article-title {
+  margin: 0 0 0 15px;
+  max-width: 300px;
+}
+
+.article-title > p {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  font-family: "Rubik";
+  color: black;
+}
+
+.content-read-time {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 8px;
+}
+
+.article-count-text {
+  padding: 0 5px;
+}
+
+.article-img-size {
+  width: 245px;
+  height: 120px;
+  border-radius: 5px;
+}
+
+.article-contents-text {
+  margin-top: 8px;
+  align-items: center;
+}
+
+.article-img-size img {
+  border-radius: 5px;
+}
+
+.eye-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.img-postion {
+  transform: scale(2.5);
+}
+
+.content-sub-text p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  font-family: "Rubik";
+  color: #666666;
+}
+
+.content-sub-text {
+  align-items: center;
+}
+
+/* @media screen and (min-width:601px) and (max-width: 1024px) {
+    .article {
+        width: 50%;
+    }
+
+}
+*/
+
+.trending-card {
+  margin-top: 12px;
+  width: 232px;
+  min-height: 120px;
+  border-radius: 8px;
+  background: linear-gradient(0deg, #39323c 0%, #cbb585 100%);
+  padding: 12px 16px;
+  position: relative;
+}
+
+.slick-slide:nth-child(even) div .trending-card {
+  background: #AF9F7B;
+}
+
+.trending-card .trending-text {
+  max-width: 109px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  font-family: "Rubik";
+  color: white;
+  word-wrap: break-word;
+}
+
+.trending-img {
+  width: 103px;
+  height: 108px;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.what-trending-cards .slick-list {
+  margin-left: -5px;
+}
+
+.what-trending-cards .slick-slide {
+  margin: 0 6px;
+}
+
+.bfl-mf-hp-slider-component .slide-one .text-white {
+  color: #ffffff;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.bfl-mf-hp-slider-component .slick-slide {
+  margin-right: 12px;
+}
+
+.bfl-mf-hp-slider-component .slide-one {
+  /* max-width: 346px; */
+  height: 110px;
+  border-radius: 4px;
+  background-color: #514228;
+}
+
+.bfl-mf-hp-slider-component .slide-one-inner {
+  justify-content: space-between;
+}
+
+.bfl-mf-hp-slider-component .slide-one-inner h2 {
+  margin: 6px 0 10px 0;
+}
+
+.bfl-mf-hp-slider-component .slide-invest-btn-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #ffffff;
+  padding: 4px 8px;
+  border: 0.5px solid #1A1A1A;
+  border-radius: 82px;
+}
+
+.bfl-mf-hp-slider-component .slide-invest-btn-container a {
+  color: #000000;
+}
+
+.bfl-mf-hp-slider-component .slick-prev {
+  left: 0;
+}
+
+.bfl-mf-hp-slider-component .slick-next {
+  right: 0;
+}
+
+.bfl-mf-hp-slider-component .slick-prev,
+.bfl-mf-hp-slider-component .slick-next {
+  width: 32px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px 0 0 8px;
+}
+
+.bfl-mf-hp-slider-component .slick-prev {
+  border-radius: 0 8px 8px 0;
+}
+
+.bfl-mf-hp-slider-component .slick-prev:before,
+.bfl-mf-hp-slider-component .slick-next:before {
+  content: '';
+  border: solid #ff6700;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  transform: rotate(-45deg);
+  transition: transform 0.3s linear;
+  position: absolute;
+}
+
+.bfl-mf-hp-slider-component .slick-prev:before {
+  transform: rotate(135deg);
+  margin-top: 0px;
+}
+
+.bfl-mf-hp-slider-component .slick-prev {
+  z-index: 999;
+}
+
+.bfl-mf-hp-slider-component .slick-prev:hover,
+.bfl-mf-hp-slider-component .slick-prev:focus,
+.bfl-mf-hp-slider-component .slick-next:hover,
+.bfl-mf-hp-slider-component .slick-next:focus {
+  background: #ffffff;
+}
+
+.bfl-mf-hp-slider-component .slick-prev.slick-disabled,
+.bfl-mf-hp-slider-component .slick-next.slick-disabled {
+  opacity: 0;
+}
+
+.content-container {
+  justify-content: center;
+}
+
+.middle-right-common-container {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.middle-bottom-inner-content,
+.middle-top-inner-content {
+  justify-content: space-between;
+}
+
+.middle-top-inner-content {
+  padding: 10px 0 15px 0;
+}
+
+.middle-bottom-inner-content {
+  padding: 15px 0 10px 0;
+}
+
+.invest-informations {
+  padding-left: 18px;
+}
+
+/* .text-gray{
+    color: #666666;
+} */
+
+/* Advantage Of Investing In Direct Mutual Fund Component  CSS Start  */
+
+.advantage-of-dmf-wrapper .dmf-img-video-container .img-wrapper {
+  width: 80%;
+}
+
+.advantage-of-dmf-wrapper .dmf-img-video-container .img-wrapper img {
+  width: 100%;
+}
+
+.description {
+  color: #666666;
+}
+
+.dmf-content-container ul li {
+  padding-bottom: 24px;
+}
+
+.dmf-show-more-wrapper .bfl-mf-home-para-rte .description {
+  display: none;
+}
+
+.show-more-text-link {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ff6700;
+  cursor: pointer;
+}
+
+.explore-mf-icon-wrap-main {
+  margin-top: 13px;
+  position: relative;
+}
+
+.explore-mf-icon-txt-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore-mf-icon-txt-wrap .icon-img-wrap {
+  height: 60px;
+  width: 60px;
+}
+
+.explore-mf-icon-txt {
+  font-size: 14px;
+  line-height: 17px;
+  color: #1A1A1A;
+  font-weight: 400;
+  margin-top: 6px;
+}
+
+.explore-mf-icon-wrap-main .slick-slide {
+  margin: 0 25px;
+}
+
+.explore-mf-icon-wrap-main .slick-track {
+  margin-left: -25px;
+}
+
+.explore-mf-icon-wrap-main .slick-list {
+  margin-right: -20px;
+}
+
+.bfl-mf-disclaimer-wrapper {
+  margin-top: 12px;
+  border-radius: 4px;
+  border: 1px solid #666666;
+  padding: 20px;
+}
+
+.disclaimer-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #1a1a1a;
+}
+
+.disclaimer-text {
+  font-weight: 800;
+  float: left;
+}
+
+.disclaimer__text-para p b {
+  font-weight: 700;
+}
+
+.addViewMoreDesclaimer.bfl-showlesscontent .SecSec,
+.addViewMoreDesclaimer.bfl-showlesscontent .viewLess {
+  display: none;
+}
+
+.addViewMoreDesclaimer.bfl-showmorecontent .viewMore {
+  display: none;
+}
+
+.addViewMoreDesclaimer .viewMore,
+.addViewMoreDesclaimer .viewLess {
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 4px;
+  color: #ff6700;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  ul.home-page-breadcrumb li:last-child a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .breadcrumb-margin {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .home-breadcrumb-main-wrap {
+    background: linear-gradient(97.13deg, #696358 5.56%, #B0A795 94.44%);
+    padding: 12px;
+  }
+
+  .home-mutual-fund {
+    background-color: none;
+    padding: 0;
+  }
+
+  .bfl-mf-breadcrumb-text {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .mutual-funds-text {
+    font-size: 16px;
+    line-height: 18px;
+    font-size: 500;
+  }
+
+  .home-page-breadcrumb {
+    font-size: 10px;
+    line-height: 12px;
+    color: #fff;
+  }
+
+  ul.home-page-breadcrumb li + li::before {
+    content: "";
+    border: solid #fff;
+    padding: 2px;
+    display: inline-block;
+    border-width: 0 1px 1px 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin: 0 3px;
+    text-align: center;
+  }
+
+  .bfl-mf-breadcrumb {
+    margin: 8px 0 8px 0;
+  }
+
+  .start-investing {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bfl-mf-hp-container {
+    padding: 12px 16px;
+  }
+
+  .bfl-mf-para-rte h2 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .bfl-mf-home-para-rte h2 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .bfl-mf-para-rte p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .bfl-mf-mb {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .explore-mf-icon-wrap-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 13px -12px 0px -12px;
+  }
+
+  .explore-mf-icon-txt-wrap {
+    padding: 0 12px;
+    margin-bottom: 12px;
+  }
+
+  .explore-mf-icon-txt-wrap .icon-img-wrap {
+    height: 48px;
+    width: 48px;
+  }
+
+  .iconslider-main {
+    display: flex;
+    flex: 25%;
+  }
+
+  .explore-mf-icon-txt {
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .partnersAmcIconsContainer .iconsImgContainer {
+    width: 48px;
+    height: 48px;
+  }
+
+  .performing-card-sub-wrapper {
+    margin: 0;
+  }
+
+  .bfl-current-tab {
+    flex-direction: column;
+  }
+
+  .home-star-img {
+    width: 8px;
+    height: 8px;
+  }
+
+  .performing-tab-wrap {
+    justify-content: space-between;
+    overflow-x: auto;
+  }
+
+  .bfl-performing-tab-sub {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    white-space: nowrap;
+  }
+
+  .bfl-performing-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .value-research {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9px;
+    margin-left: 3px;
+  }
+
+  .fund-invest-img {
+    margin-right: 8px;
+  }
+
+  .per-min-text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .per-rupee-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 4px;
+  }
+
+  .per-view-sub-wrap {
+    margin: 9px 12px;
+  }
+
+  .add-to-compare {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .per-invest-btn {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 4px 12px;
+  }
+
+  .equity-span-wrap {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .view-all-text {
+    display: none;
+  }
+
+  .desk-hide-view {
+    text-align: center;
+    margin-top: 12px;
+    display: block;
+  }
+
+  .value-equity {
+    display: block;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    padding-right: 3px;
+    margin-left: 3px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .article-start {
+    flex-direction: column;
+  }
+
+  .article {
+    border-bottom: 1px solid rgba(0, 41, 83, 0.2);
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .article-title {
+    max-width: 100%;
+  }
+
+  .article-img-size {
+    width: 150px;
+    height: 75px;
+    border-radius: 5px;
+  }
+
+  .article-title > p {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    font-family: "Rubik";
+    color: black;
+  }
+
+  .content-sub-text p {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    font-family: "Rubik";
+    color: #666666;
+  }
+
+  .eye-icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1224px) {
+  .trending-card {
+    min-height: 138px;
+    padding: 10px 7px;
+  }
+
+  .trending-card .trending-text {
+    min-width: 83px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .trending-img {
+    width: 89px;
+    height: 88px;
+    right: 4px;
+  }
+
+  .what-trending-cards .slick-slide {
+    margin: 0 4px;
+  }
+
+  .what-trending-cards .slick-list {
+    margin-right: -12px;
+  }
+
+  .what-trending-cards .slick-track {
+    margin: 0 -4px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1224px) {
+  .trending-img {
+    width: 103px;
+    height: 108px;
+  }
+
+  .trending-card .trending-text {
+    max-width: 109px;
+    font-size: 16px;
+    line-height: 19px;
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .bfl-mf-hp-slider-component .slide-one .text-white {
+    font-weight: 500;
+  }
+
+  .bfl-mf-hp-slider-component .slide-invest-btn-container {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .invest-with-us-wrapper {
+    flex-direction: column;
+  }
+
+  .invest-with-us-wrapper .left-container {
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  .invest-with-us-wrapper .middle-right-common-container {
+    width: 100%;
+  }
+
+  .middle-bottom-inner-content,
+  .middle-top-inner-content {
+    justify-content: space-around;
+  }
+
+  .advantage-of-dmf-wrapper {
+    flex-direction: column;
+  }
+
+  .dmf-img-video-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .dmf-content-container {
+    width: 100%;
+  }
+
+  .show-more-text-link {
+    text-align: center;
+  }
+
+  .advantage-of-dmf-wrapper .dmf-img-video-container .img-wrapper {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .bfl-mf-hp-container {
+    padding: 12px;
+  }
+
+  .invest-with-us-wrapper .left-container .content-container .description {
+    font-size: 12px;
+    line-height: 15px;
+    padding-right: 10px;
+  }
+
+  .invest-with-us-wrapper .left-container .content-container h2 {
+    width: 51%;
+    margin-bottom: 5px;
+  }
+
+  .invest-with-us-wrapper .left-container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 28px 0px 28px 22px;
+  }
+
+  .invest-with-us-wrapper .middle-right-common-container {
+    width: 100%;
+  }
+
+  .middle-bottom-inner-content,
+  .middle-top-inner-content {
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .left-container .img-container,
+  .left-container .content-container {
+    width: 100%;
+  }
+
+  .middle-top,
+  .right-top,
+  .middle-bottom,
+  .right-bottom {
+    width: 100%;
+    align-items: center;
+    padding-bottom: 28px;
+  }
+
+  .right-bottom {
+    padding-bottom: 0px;
+  }
+
+  .middle-top .icon img,
+  .right-top .icon img,
+  .middle-bottom .icon img,
+  .right-bottom .icon img {
+    height: 20px;
+    width: 18px;
+  }
+
+  .invest-informations {
+    padding-left: 13px;
+  }
+
+  .middle-right-common-container {
+    padding: 16px 8px;
+  }
+
+  .advantage-of-dmf-wrapper {
+    flex-direction: column;
+  }
+
+  .advantage-of-dmf-wrapper,
+  .dmf-show-more-wrapper .toggle-text {
+    padding: 0 4px;
+  }
+
+  .dmf-heading {
+    padding: 0 4px 12px 4px;
+  }
+
+  .dmf-img-video-container,
+  .mob-video-content {
+    width: 100%;
+  }
+
+  .dmf-img-video-container {
+    padding-bottom: 12px;
+    display: flex;
+  }
+
+  .advantage-of-dmf-wrapper .dmf-img-video-container .img-wrapper {
+    width: 90%;
+    padding-right: 12px;
+  }
+
+  .mob-video-content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .dmf-img-video-container .bfl-mf-home-para-rte .description,
+  .dmf-content-container .bfl-mf-home-para-rte .description {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+  }
+
+  .dmf-content-container {
+    width: 100%;
+  }
+
+  .dmf-content-container ul li {
+    padding-bottom: 12px;
+  }
+
+  .dmf-content-container ul li span {
+    height: 16px;
+    width: 16px;
+  }
+
+  .dmf-content-container ul li span img {
+    width: -webkit-fill-available;
+  }
+
+  .dmf-content-container ul li .dmf-list-content {
+    padding-left: 8px;
+  }
+
+  .dmf-content-container ul li .dmf-list-content h2 {
+    padding-bottom: 2px;
+  }
+
+  .dmf-show-more-wrapper .show-more-text-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bfl-mf-disclaimer-wrapper {
+    padding: 10px;
+  }
+
+  .disclaimer__text-para {
+    font-size: 12px;
+    line-height: 19px;
+    color: #1a1a1a;
+  }
+
+  .disclaimer-text {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .addViewMoreDesclaimer .viewMore,
+  .addViewMoreDesclaimer .viewLess {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 4px;
+  }
+}
